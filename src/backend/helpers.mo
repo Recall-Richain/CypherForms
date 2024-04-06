@@ -55,6 +55,22 @@ module CypherFormsHelpers {
     created : Int; // timestamp from Time.now() of when created
   };
 
+  public type WonCheck = {
+    form_id : Text; // id of the form the nonce belongs to
+    lock : Bool; // lock
+    reward : Int; // timestamp from Time.now() of when created
+  };
+  public type rewardCheck = {
+    form_id : Text; // id of the form the nonce belongs to
+    lock : Bool; // lock
+    reward : Int; // timestamp from Time.now() of when created
+  };
+  public type TypeCheck = {
+    form_id : Text; // id of the form the nonce belongs to
+    lock : Bool; // lock
+    type : Int; // timestamp from Time.now() of when created
+  };
+
   public type FormReturnPublicWithNonce = Nonce and {
     id : Text; // id of the form
     name : Text; // name of the form
